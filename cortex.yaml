@@ -6,7 +6,7 @@ info:
   x-cortex-git:
     github:
       repository: hannavigil-test-org/hannas-test-repo
-  x-cortex-tag: hannas-test-repo-in-fake-org
+  x-cortex-tag: hannas-test-repo
   x-cortex-link:
   - url: https://github.com/hannavigil-test-org/hannas-test-repo
     name: Github Repository
