@@ -1,6 +1,6 @@
 openapi: 3.0.0
 info:
-  title: Hanna's test repo
+  title: Hannas test repo new name
   description: A description of my brand new repo
   version: 1.0.0
   x-cortex-git:
