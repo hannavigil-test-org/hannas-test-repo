@@ -1,0 +1,27 @@
+tag: hanna-s-scorecard-test-gitops
+name: Hanna's scorecard test gitops
+draft: false
+notifications:
+  enabled: true
+  scoreDropNotificationsEnabled: false
+exemptions:
+  enabled: true
+  autoApprove: false
+  userSpecificNotifications: true
+rules:
+  - title: Branch protection
+    expression: git.branchProtection("is set") != null
+    identifier: 21c30af3-6dd6-3bce-bbe5-56e43549015f
+    weight: 1
+  - title: Is archived
+    expression: entity.isArchived() == true
+    identifier: 76678520-dd4a-327f-b081-ab7c6b491cff
+    weight: 1
+  - title: Ownership
+    expression: ownership.teams().all((team) => team.tag.matches("xx"))
+    identifier: 7b7b5188-f606-3083-9df8-bbd96aed21ad
+    weight: 1
+  - title: Has description
+    expression: entity.description() != null
+    identifier: 945e4ff1-f775-3f3b-8b66-7199e1a595ab
+    weight: 1

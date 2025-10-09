@@ -1,0 +1,16 @@
+openapi: 3.0.0
+info:
+  title: Hanna's test repo
+  description: A description of my brand new repo
+  version: 1.0.0
+  x-cortex-git:
+    github:
+      repository: hannavigil-test-org/hannas-test-repo
+  x-cortex-tag: hannas-test-repo-in-fake-org
+  x-cortex-link:
+  - url: https://github.com/hannavigil-test-org/hannas-test-repo
+    name: Github Repository
+    type: documentation
+  x-cortex-owners:
+  - type: EMAIL
+    email: hanna.vigil@cortex.io
